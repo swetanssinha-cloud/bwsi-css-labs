@@ -42,6 +42,10 @@ def main():
     print(f"===== Simple Calculator =====")
 
     # Ask the user for sample input    
+    num1 = input("Enter the first number: ")
+    if num1 != type[float]:
+        raise ValueError("Invalid input. Please enter a number.")
+    
     num2 = float(input("Enter the second number: "))
     if num2 != type[float]:
         raise ValueError("Invalid input. Please enter a number.")
